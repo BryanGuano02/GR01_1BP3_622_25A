@@ -34,6 +34,21 @@
 <!--        </dependency>-->
     </dependencies>
     <build>
+        <plugins>
+            <!-- Plugin para crear el JAR ejecutable -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>CalculatorExecute</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
         <finalName>GR01_1BP3_622_25A</finalName>
     </build>
 </project>
